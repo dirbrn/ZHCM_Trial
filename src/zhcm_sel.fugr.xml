@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>HCM Employee Selection</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZHCM_SELTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZHCM_SEL</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZHCM_HRSEL_GET_EMPLOYEE</FUNCNAME>
+     <SHORT_TEXT>Get Employee List by Selection Criteria</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_PERNR</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>Z_PERNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_WERKS</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>Z_WERKS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_PERSG</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>Z_PERSG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_PERSK</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>Z_PERSK</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_BEGDA</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>BEGDA</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_ENDDA</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ENDDA</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_STAT2</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>Z_STAT2</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_SUBRC</PARAMETER>
+       <TYP>SYSUBRC</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_COUNT</PARAMETER>
+       <TYP>INT4</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_EMPLOYEES</PARAMETER>
+       <DBSTRUCT>ZHCM_PA0001</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>NOT_FOUND</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>INVALID_SELECTION</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_PERNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Personnel No.</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_WERKS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Personnel Area</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_PERSG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Employee Group</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_PERSK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Employee Subgroup</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_BEGDA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Gültigkeitsbeginn</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_ENDDA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Gültigkeitsende</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_STAT2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Employment Status</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_SUBRC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Rückgabewert</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_COUNT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>4 Byte Signed Integer</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_EMPLOYEES</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Org. Assignment (Template)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NOT_FOUND</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>No employees found</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>INVALID_SELECTION</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Invalid selection criteria</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

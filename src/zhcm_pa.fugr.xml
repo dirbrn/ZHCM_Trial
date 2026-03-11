@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>HCM PA Infotype Functions</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZHCM_PATOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZHCM_PA</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZHCM_HR_READ_INFOTYPE</FUNCNAME>
+     <SHORT_TEXT>Read HCM Infotype Data</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_PERNR</PARAMETER>
+       <TYP>Z_PERNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_INFTY</PARAMETER>
+       <TYP>Z_INFTY</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_BEGDA</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>BEGDA</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_ENDDA</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ENDDA</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_SUBRC</PARAMETER>
+       <TYP>SYSUBRC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_PA0000</PARAMETER>
+       <DBSTRUCT>ZHCM_PA0000</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_PA0001</PARAMETER>
+       <DBSTRUCT>ZHCM_PA0001</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_PA0002</PARAMETER>
+       <DBSTRUCT>ZHCM_PA0002</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_PA0003</PARAMETER>
+       <DBSTRUCT>ZHCM_PA0003</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_PA0007</PARAMETER>
+       <DBSTRUCT>ZHCM_PA0007</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_PA0008</PARAMETER>
+       <DBSTRUCT>ZHCM_PA0008</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_PA0041</PARAMETER>
+       <DBSTRUCT>ZHCM_PA0041</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>NOT_FOUND</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>INVALID_INFTYPE</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_PERNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Personnel No.</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_INFTY</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Infotype Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_BEGDA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Gültigkeitsbeginn</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_ENDDA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Gültigkeitsende</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_SUBRC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Rückgabewert</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_PA0000</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>HR Actions</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_PA0001</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>HR Master Data: Org. Assignment (Template)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_PA0002</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Personal Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_PA0003</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Payroll Period ID</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_PA0007</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>HR Master Data: Planned Working Time (Template)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_PA0008</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Basic Pay</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_PA0041</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Date Specifications</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NOT_FOUND</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>No records found</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>INVALID_INFTYPE</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Infotype not supported</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

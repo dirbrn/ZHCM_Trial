@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CHDO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <CHDO>
+    <REPORTS_GENERATED>
+     <TCDRPS>
+      <OBJECT>ZHCM_EMP</OBJECT>
+      <REPORTNAME>ZHCM_EMP</REPORTNAME>
+      <TEXTCASE>X</TEXTCASE>
+      <ARBGEB>CD</ARBGEB>
+      <FEHLERNR>600</FEHLERNR>
+      <FGRP>ZHCM_LOGGING</FGRP>
+      <PREFIX>Y</PREFIX>
+      <UPDATE_FLG>2</UPDATE_FLG>
+      <DATAGEN>X</DATAGEN>
+     </TCDRPS>
+    </REPORTS_GENERATED>
+    <OBJECTS>
+     <TCDOBS>
+      <OBJECT>ZHCM_EMP</OBJECT>
+      <TABNAME>ZHCM_PA0001</TABNAME>
+      <OLDTABNAME>ZHCM_PA0001</OLDTABNAME>
+      <DOCUD_NOIF>X</DOCUD_NOIF>
+     </TCDOBS>
+     <TCDOBS>
+      <OBJECT>ZHCM_EMP</OBJECT>
+      <TABNAME>ZHCM_PA0007</TABNAME>
+      <OLDTABNAME>ZHCM_PA0007</OLDTABNAME>
+      <DOCUD_NOIF>X</DOCUD_NOIF>
+     </TCDOBS>
+    </OBJECTS>
+    <OBJECTS_TEXT>
+     <TCDOBTS>
+      <SPRAS>D</SPRAS>
+      <OBJECT>ZHCM_EMP</OBJECT>
+      <OBTEXT>HCM Employee Master Data</OBTEXT>
+     </TCDOBTS>
+    </OBJECTS_TEXT>
+   </CHDO>
+  </asx:values>
+ </asx:abap>
+</abapGit>
